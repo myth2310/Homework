@@ -1,11 +1,12 @@
-import './App.css';
-import Home from './pages/home/indexx';
-import Card from './component/component';
+import Home from './pages/home/index';
+
 
 function App() {
-    return (
-      <Card/>
-    );
+	return (
+		<>
+			<Home />
+		</>
+	);
 }
 
 export default App;

@@ -1,0 +1,73 @@
+.table-container {
+	padding: 40px;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+th {
+	border-bottom: 1px solid #dadada;
+	text-align: center;
+}
+
+table tr td {
+	padding: 8px 0;
+}
+
+.title-content {
+	display: flex;
+	padding: 0 16px;
+}
+
+.title-content img {
+	width: 50px;
+	height: 50px;
+}
+
+.song-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 12px;
+	width: 100%;
+	text-align: left;
+}
+
+.button-container {
+	padding: 0px 8px;
+}
+
+.button-container button {
+	outline: none;
+	background: none;
+	padding: 8px 0px;
+	color: black;
+	border-radius: 4px;
+	width: 100%;
+}
+
+td button:hover {
+	cursor: pointer;
+}
+
+.deselect {
+	border: 1px solid #fa4f4f;
+	color: black;
+}
+
+.deselect:hover {
+	background-color: #fa4f4f;
+	color: black;
+}
+
+.select {
+	border: 1px solid blue;
+	color: black;
+}
+
+.select:hover {
+	background-color: blue;
+	color:black;
+}
