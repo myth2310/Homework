@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './playlist-form.css';
 import { Redirect } from 'react-router-dom';
 
-function PlaylistForm({}){
-	// if(!authorized){
-	// 	return <Redirect to="/"/>
-	// }
+function PlaylistForm({authorized}){
+	if(!authorized){
+		return <Redirect to="/"/>
+	}
 	return (
 		<form className="forms">
 			<div className="playlist-form">
