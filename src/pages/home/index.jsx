@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Login, Table } from '../../components';
 import './home.css';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const Home = () => {
 	const [value, setValue] = useState('');
@@ -57,17 +60,29 @@ const Home = () => {
 							</>
 						) : (
 							<>
-								<form className="form" onSubmit={(e) => handleSubmit(e)}>
-									<input
+								<Box
+									component="form"
+									sx={{
+										'& > :not(style)': { m: 4, width: '25ch' },
+									}}
+									noValidate
+									autoComplete="off"
+									onSubmit={(e) => handleSubmit(e)}
+									>
+									<TextField 
+										id="outlined-basic" 
+										label="Search Music" 
+										variant="outlined" 
 										type="text"
 										value={value}
 										onChange={(e) => handleChange(e)}
 										className="text-field"
-										placeholder="Search..."
-										
 									/>
-									<input type="submit"  className="submit-button" value="Search" />
-								</form>
+									{/* <input type="submit"  className="submit-button" value="Search" /> */}
+									<Button variant="contained" color="success" type="submit" >
+									Search
+									</Button>
+							</Box>
 							</>
 						)}
 						{!result.length ? null : (
