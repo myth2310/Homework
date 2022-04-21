@@ -3,7 +3,7 @@ import '../../App.css';
 import axios from 'axios';
 
 function login() {
-    const CLIENT_ID = "a43d691e54a04cd6991b32ccae36403a"
+    const CLIENT_ID = "REACT_APP_GIPHY"
     const REDIRECT_URI = "http://localhost:3000"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
